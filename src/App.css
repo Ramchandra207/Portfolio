@@ -1,0 +1,66 @@
+/* Import the Tropi Land font */
+@font-face {
+  font-family: 'Tropi Land';
+  src: url('/fonts/tropi-land.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* General body styling */
+body {
+  background: url("../assets/background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+#aboutme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 50px 0;
+}
+
+.about-me-card {
+  max-width: 800px;
+  padding: 30px;
+  text-align: center;
+  border-radius: 15px;
+  backdrop-filter: blur(8px);
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fjalla-one-regular {
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 50;
+  font-style: normal;
+}
+
+/* Apply Tropi Land font */
+.tropi-land {
+  font-family: 'Tropi Land', sans-serif;
+}
+
+/* Reset and global styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevent scrolling */
+  height: 100%;
+  width: 100%;
+}
